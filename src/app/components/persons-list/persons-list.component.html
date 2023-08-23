@@ -1,0 +1,270 @@
+<mat-card>
+  <mat-card-header></mat-card-header>
+  <mat-card-content>
+    <table mat-sort mat-table [dataSource]="dataSource" class="text-center" cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="drop($event)">
+      <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="رقم ال id">
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>رقم ال id</th>
+        <td mat-cell class="text-center" *matCellDef="let element">
+          {{ element.id }}
+        </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="الاسم بالكامل">
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
+          الاسم بالكامل
+        </th>
+        <td mat-cell class="text-center" *matCellDef="let element">
+          {{ element.name }}
+        </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="البريد الالكتروني">
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
+          البريد الالكتروني
+        </th>
+        <td mat-cell class="text-center p-0" *matCellDef="let element">
+          {{ element.email }}
+        </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="ايام العمل">
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
+          ايام العمل
+        </th>
+        <td mat-cell class="work-days text-center p-0" *matCellDef="let element">
+          <ul class="group">
+            <li>
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="sat{{ element.id }}"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-secondary" for="sat{{ element.id }}"
+                >س</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="sun{{ element.id }}"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-secondary" for="sun{{ element.id }}"
+                >ح</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="mon{{ element.id }}"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-secondary" for="mon{{ element.id }}"
+                >ن</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="tue{{ element.id }}"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-secondary" for="tue{{ element.id }}"
+                >ث</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="wed{{ element.id }}"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-secondary" for="wed{{ element.id }}"
+                >ر</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="thu{{ element.id }}"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-secondary" for="thu{{ element.id }}"
+                >خ</label
+              ><br />
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="fri{{ element.id }}"
+                checked
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-secondary" for="fri{{ element.id }}"
+                >ج</label
+              ><br />
+            </li>
+          </ul>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ملفات">
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>ملفات</th>
+        <td mat-cell class="text-center p-0" *matCellDef="let element">
+          <div class="uploaded-files">
+            <img src="{{element.uploadedFile.fileImgPath}}" style="object-fit:cover;margin:5px;border-radius: 4px;"  width="30px" height="30" alt="">
+            <div class="file-info ">
+              <h6 class="file-name">
+                {{element.uploadedFile.fileName}}
+              </h6>
+              <p class="file-size">
+                {{element.uploadedFile.fileSize}}
+              </p>
+
+            </div>
+          </div>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="اعدادات">
+        <th
+          mat-header-cell
+          class="text-center setting-header-icon"
+          *matHeaderCellDef
+        >
+        <div class="parent-setting-group">
+            <i class="fa-solid fa-gear"></i>
+            <ul class="check-group">
+              <li>
+
+                <div class="form-check">
+                  <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                  </label>
+                </div>
+              </li>
+              <li>
+
+                <div class="form-check">
+                  <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                  </label>
+                </div>
+              </li>
+              <li>
+
+                <div class="form-check">
+                  <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                  </label>
+                </div>
+              </li>
+              <li>
+
+                <div class="form-check">
+                  <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                  </label>
+                </div>
+              </li>
+              <li>
+
+                <div class="form-check">
+                  <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                  </label>
+                </div>
+              </li>
+              <li>
+
+                <div class="form-check">
+                  <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                  </label>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </th>
+        <td mat-cell class="text-center" *matCellDef="let element">
+          <div
+            class="setting-data"
+            id="{{ element.id }}"
+            (click)="showSetting(element.id)"
+          >
+            <i class="fa-solid fa-ellipsis-vertical setting-icon"></i>
+            <div class="setting-btns" #settingBtns>
+              <button class="btn btn-sm btn-warning">Edit</button>
+              <button class="btn btn-sm btn-danger">Delete</button>
+            </div>
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-paginator
+      [pageSizeOptions]="[6, 15, 25, 100]"
+      showFirstLastButtons
+    ></mat-paginator>
+  </mat-card-footer>
+</mat-card>

@@ -1,0 +1,98 @@
+
+
+
+@media (max-width:767px) {
+  mat-card{
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+}
+mat-card-footer{
+  width:100%
+}
+.work-days ul{
+  margin:0;
+  display: flex;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-days  ul li{
+  margin:5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-days label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:30px;
+  height: 30px;
+}
+/* input[type="checkbox"],label{
+  width:15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.work-days .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: #2385ea;
+    border-color: #2385ea;
+}
+.fa-gear{
+  color:#fff;
+  background-color:#0871de ;
+  padding:8px;
+  border-radius: 4px;
+}
+.setting-data{
+  cursor: pointer;
+    position: relative;
+}
+.setting-data .setting-icon{
+  color:#999;
+
+}
+.setting-btns{
+  display: flex;
+/* position: absolute; */
+display: none;
+}
+.parent-setting-group{
+  position: relative;
+  z-index: 10000 !important;
+}
+.check-group{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 10000;
+}
+.uploaded-files{
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+.uploaded-files h6{
+  font-size: 14px;
+  margin:0;
+}
+
+.uploaded-files .file-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.uploaded-files p{
+  width:100%;
+  color:#999;
+  margin:0;
+    text-align: right;
+}

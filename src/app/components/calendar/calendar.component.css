@@ -1,0 +1,89 @@
+.card-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-header .date{
+  display: flex;
+  align-items: center;
+
+}
+.card-header .date .arrows{
+  margin: 8px;
+display: flex;
+align-items: center;
+}
+.card-header .date .arrows .arrow-right{
+  margin-left:10px;
+
+}
+.card-header .cal{
+  cursor: pointer;
+}
+
+.card-header .cal i:last-child{
+margin-right:5px;
+font-size: 12px;
+color:#999;
+}
+
+.card-body .days{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.card-body .days p{
+  font-size: 14px;
+  color:#999
+}
+.card-body .days h5{
+  font-size: 16px;
+}
+.card-body .days .day{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:16%;
+  padding:5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-body .days .day.active{
+  background-color: #feee00;
+}
+.card-body .days .day.active .day-number{
+  color:#fff;
+  background-color: #000;
+  padding:5px;
+  border-radius: 50%;
+
+}
+.day .day-tasks{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.day .day-tasks .task{
+  /* background-color: #000; */
+  width:7px;
+  height: 7px;
+  border-radius: 50%;
+  /* margin:3px */
+}
+.day .day-tasks .task-one{
+  background-color: #3dd598;
+}
+.day .day-tasks .task-two{
+  background-color: #fc9a01;
+}
+.day .day-tasks .task-three{
+  background-color: #5960f9;
+}
+
+
+
+
+
