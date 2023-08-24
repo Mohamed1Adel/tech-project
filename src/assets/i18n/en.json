@@ -1,0 +1,50 @@
+{
+  "person-info": {
+    "first-person": "First Person"
+  },
+  "persons-table": {
+    "column-name": {
+      "ID": "ID",
+      "FullName": "Full Name",
+      "Email": "Email",
+      "WorkDays": "Work Days",
+      "Files": "Files",
+      "Setting": "Settings"
+    },
+    "WorkDayName": {
+      "Sa": "Sa",
+      "Su": "Su",
+      "Mo": "Mo",
+      "Tu": "Tu",
+      "We": "We",
+      "Th": "Th",
+      "Fr": "Fr"
+    },
+    "table-Btns": {
+      "Edit": "Edit",
+      "Delete": "Delete"
+    }
+  },
+
+  "rates":{
+    "statistics":"statistics",
+    "first-rate":"first rate",
+    "second-rate":"second rate"
+  },
+  "reads": {
+    "second-reads": "Second Read"
+  },
+  "comments": {},
+  "calender": {
+    "Sat": "Sat",
+    "Sun": "Sun",
+    "Mon": "Mon",
+    "Tue": "Tue",
+    "Wed": "Wed",
+    "Thu": "Thurs",
+    "Fri": "Fri"
+  },
+  "general":{
+    "AppointmentCalendar":"Appointment calendar"
+  }
+}

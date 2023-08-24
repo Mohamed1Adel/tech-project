@@ -1,0 +1,49 @@
+{
+  "person-info": {
+    "first-person": "الشخص الاول"
+  },
+  "persons-table": {
+    "column-name": {
+      "ID": "رقم ال id",
+      "FullName": "الاسم بالكامل",
+      "Email": "البريد الالكتروني",
+      "WorkDays": "ايام العمل",
+      "Files": "ملفات",
+      "Setting": "اعدادات"
+    },
+    "WorkDayName": {
+      "Sa": "س",
+      "Su": "ح",
+      "Mo": "ن",
+      "Tu": "ث",
+      "We": "ر",
+      "Th": "خ",
+      "Fr": "ج"
+    },
+    "table-Btns": {
+      "Edit": "تعديل",
+      "Delete": "حذف"
+    }
+  },
+  "rates":{
+    "statistics": "احصائيات",
+    "first-rate": "الخيار الاول",
+    "second-rate": "الخيار الثاني"
+  },
+  "reads": {
+    "second-reads": "قراءات ثانية"
+  },
+  "comments": {},
+  "calender": {
+    "Sat": "السبت",
+    "Sun": "الاحد",
+    "Mon": "الاثنين",
+    "Tue": "الثلاثاء",
+    "Wed": "الاربعاء",
+    "Thu": "الخميس",
+    "Fri": "الجمعة"
+  },
+  "general": {
+    "AppointmentCalendar": "تقويم المواعيد"
+  }
+}

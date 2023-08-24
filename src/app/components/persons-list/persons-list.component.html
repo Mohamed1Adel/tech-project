@@ -6,38 +6,35 @@
         The actual rendered columns are set as a property on the row definition" -->
 
       <!-- Position Column -->
-      <ng-container matColumnDef="رقم ال id">
-        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>رقم ال id</th>
+      <ng-container matColumnDef="ID">
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>{{'persons-table.column-name.ID' | translate}}</th>
         <td mat-cell class="text-center" *matCellDef="let element">
           {{ element.id }}
         </td>
       </ng-container>
 
       <!-- Name Column -->
-      <ng-container matColumnDef="الاسم بالكامل">
+      <ng-container matColumnDef="Full Name">
         <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
-          الاسم بالكامل
-        </th>
+{{'persons-table.column-name.FullName' | translate}}        </th>
         <td mat-cell class="text-center" *matCellDef="let element">
           {{ element.name }}
         </td>
       </ng-container>
 
       <!-- Weight Column -->
-      <ng-container matColumnDef="البريد الالكتروني">
+      <ng-container matColumnDef="Email">
         <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
-          البريد الالكتروني
-        </th>
+{{'persons-table.column-name.Email' | translate}}        </th>
         <td mat-cell class="text-center p-0" *matCellDef="let element">
           {{ element.email }}
         </td>
       </ng-container>
 
       <!-- Symbol Column -->
-      <ng-container matColumnDef="ايام العمل">
+      <ng-container matColumnDef="Work Days">
         <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
-          ايام العمل
-        </th>
+{{'persons-table.column-name.WorkDays' | translate}}        </th>
         <td mat-cell class="work-days text-center p-0" *matCellDef="let element">
           <ul class="group">
             <li>
@@ -49,7 +46,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="sat{{ element.id }}"
-                >س</label
+                >{{'persons-table.WorkDayName.Sa' | translate}}     </label
               ><br />
             </li>
             <li>
@@ -61,7 +58,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="sun{{ element.id }}"
-                >ح</label
+                >{{'persons-table.WorkDayName.Su' | translate}} </label
               ><br />
             </li>
             <li>
@@ -73,7 +70,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="mon{{ element.id }}"
-                >ن</label
+                >{{'persons-table.WorkDayName.Mo' | translate}} </label
               ><br />
             </li>
             <li>
@@ -85,7 +82,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="tue{{ element.id }}"
-                >ث</label
+                >{{'persons-table.WorkDayName.Tu' | translate}}</label
               ><br />
             </li>
             <li>
@@ -97,7 +94,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="wed{{ element.id }}"
-                >ر</label
+                >{{'persons-table.WorkDayName.We' | translate}}</label
               ><br />
             </li>
             <li>
@@ -109,7 +106,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="thu{{ element.id }}"
-                >خ</label
+                >{{'persons-table.WorkDayName.Th' | translate}}</label
               ><br />
             </li>
             <li>
@@ -121,15 +118,15 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="fri{{ element.id }}"
-                >ج</label
+                >{{'persons-table.WorkDayName.Fr' | translate}}</label
               ><br />
             </li>
           </ul>
         </td>
       </ng-container>
 
-      <ng-container matColumnDef="ملفات">
-        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>ملفات</th>
+      <ng-container matColumnDef="Files">
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>{{'persons-table.column-name.Files' | translate}}</th>
         <td mat-cell class="text-center p-0" *matCellDef="let element">
           <div class="uploaded-files">
             <img src="{{element.uploadedFile.fileImgPath}}" style="object-fit:cover;margin:5px;border-radius: 4px;"  width="30px" height="30" alt="">
@@ -145,7 +142,7 @@
           </div>
         </td>
       </ng-container>
-      <ng-container matColumnDef="اعدادات">
+      <ng-container matColumnDef="Setting">
         <th
           mat-header-cell
           class="text-center setting-header-icon"
@@ -250,8 +247,8 @@
           >
             <i class="fa-solid fa-ellipsis-vertical setting-icon"></i>
             <div class="setting-btns" #settingBtns>
-              <button class="btn btn-sm btn-warning">Edit</button>
-              <button class="btn btn-sm btn-danger">Delete</button>
+              <button class="btn btn-sm btn-warning">{{'persons-table.table-Btns.Edit' | translate}}</button>
+              <button class="btn btn-sm btn-danger">{{'persons-table.table-Btns.Delete' | translate}}</button>
             </div>
           </div>
         </td>
