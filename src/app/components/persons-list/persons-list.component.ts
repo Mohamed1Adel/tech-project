@@ -21,13 +21,21 @@ export class PersonsListComponent {
   @ViewChild('settingBtns') settingBtns!: ElementRef;
   showSettingBtns: boolean = false;
   rowId: any;
+  // displayedColumns: string[] = [
+  //   'رقم ال id',
+  //   'الاسم بالكامل',
+  //   'البريد الالكتروني',
+  //   'ايام العمل',
+  //   'ملفات',
+  //   'اعدادات',
+  // ];
   displayedColumns: string[] = [
-    'رقم ال id',
-    'الاسم بالكامل',
-    'البريد الالكتروني',
-    'ايام العمل',
-    'ملفات',
-    'اعدادات',
+    'ID',
+    'Full Name',
+    'Email',
+    'Work Days',
+    'Files',
+    'Setting'
   ];
 
   constructor(private userServices: UserServicesService) {}
