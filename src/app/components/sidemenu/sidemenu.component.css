@@ -1,48 +1,108 @@
-.logo{
-  margin-bottom:150px ;
+.logo {
+  margin-bottom: 150px;
+  margin-left: 20px;
 }
-.main-multi-menu h5{
-  color:#999
+.main-multi-menu h5 {
+  color: #999;
 }
 
-.menu-btn-and-logo{
+.menu-btn-and-logo {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* .menu:hover .menu-items{
+.menu:hover .menu-items {
   position: relative;
-  left:0;
-  top:100%;
+  left: 0;
+  top: 100%;
   display: block;
-} */
-.menu-items{
-  /* position: absolute;
-  left:0;
-  top:100%; */
-  /* display: none; */
-  
 }
-.menu{
+
+.menu-items {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+.menu-item:hover{
+background-color: yellow;
+}
+.menu {
   overflow: hidden;
-    height: 25px;
-    transition: all 0.3s ease-in-out;
+  height: 25px;
+  transition: all 0.3s ease-in-out;
+  list-style: none;
 }
-.menu:not(:first-child){
+.menu ul {
+  list-style: none;
+}
+.menu:not(:first-child) {
   margin-top: 20px;
 }
-.menu:hover{
+.menu:hover {
   overflow: visible;
   height: auto;
 }
-.fa-chevron-up{
+.fa-chevron-up {
   display: none;
 }
-.menu:hover .fa-chevron-up{
+.menu:hover .fa-chevron-up {
   display: block;
 }
-.menu:hover .fa-chevron-down{
+.menu:hover .fa-chevron-down {
   display: none;
 }
 
+.menu-btn-and-logo {
+
+  margin-bottom: 15px;
+
+}
+
+.account {
+  margin-top: 100px;
+}
+
+.bottom-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bottom-menu li {
+  margin-top: 20px;
+}
+.menu-btn-and-logo:hover ,.bottom-menu:hover li,.langauge:hover{
+  cursor: pointer;
+  padding:3px;
+  border-radius: 4px;
+  background-color: yellow;
+}
+
+
+.toggle-menu {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  right: -15px;
+}
+
+.langauge {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.langauge i ,.bottom-menu i{
+  margin-right: 8px;
+}

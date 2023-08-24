@@ -1,7 +1,5 @@
 
-
-
-@media (max-width:767px) {
+@media (max-width:1199px) {
   mat-card{
     max-width: 100%;
     overflow: hidden;
@@ -10,6 +8,12 @@
 }
 mat-card-footer{
   width:100%
+}
+mat-card{
+position: relative;
+}
+.table{
+  position: relative;
 }
 .work-days ul{
   margin:0;
@@ -32,13 +36,7 @@ mat-card-footer{
   width:30px;
   height: 30px;
 }
-/* input[type="checkbox"],label{
-  width:15px;
-  height: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+
 .work-days .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
     color: var(--bs-btn-active-color);
     background-color: #2385ea;
@@ -60,7 +58,6 @@ mat-card-footer{
 }
 .setting-btns{
   display: flex;
-/* position: absolute; */
 display: none;
 }
 .parent-setting-group{
@@ -95,4 +92,7 @@ display: none;
   color:#999;
   margin:0;
     text-align: right;
+}
+.setting-btns button{
+  margin:3px
 }

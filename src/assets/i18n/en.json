@@ -1,6 +1,18 @@
 {
+  "dir": "ltr",
+  "side-menu": {
+    "home": "Home",
+    "menu-no": "Menu No",
+    "menu-item": "Menu Item",
+    "account": "Account",
+    "help": "Help",
+    "settings": "Settings"
+  },
   "person-info": {
-    "first-person": "First Person"
+    "first-person": "First Person",
+    "first-read": "First read 1",
+    "second-read": "Second read 2",
+    "third-read": "Third read 3"
   },
   "persons-table": {
     "column-name": {
@@ -26,10 +38,10 @@
     }
   },
 
-  "rates":{
-    "statistics":"statistics",
-    "first-rate":"first rate",
-    "second-rate":"second rate"
+  "rates": {
+    "statistics": "statistics",
+    "first-rate": "first rate",
+    "second-rate": "second rate"
   },
   "reads": {
     "second-reads": "Second Read"
@@ -44,7 +56,12 @@
     "Thu": "Thurs",
     "Fri": "Fri"
   },
-  "general":{
-    "AppointmentCalendar":"Appointment calendar"
+  "time":{
+    "am":"AM",
+    "pm":"PM"
+  },
+  "general": {
+    "AppointmentCalendar": "Appointment calendar",
+    "add-new":"Add New"
   }
 }

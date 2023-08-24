@@ -30,16 +30,20 @@ outline: none;
 .search-field{
 
 }
+
 .search-box button{
   border: none;
   outline: none;
   margin-right: 5px;
-  /* padding:5px; */
+
   color:#999;
   border:1px solid #999;
   border-radius: 4px;
   height: 38px;
   width:38px
+}
+button:hover i{
+color:#feee00
 }
 .arrow{
   font-size: 14px;
@@ -49,5 +53,9 @@ outline: none;
   background-color: #feee00;
   padding:8px 20px;
   border-radius: 5px;
+}
+.add:hover{
+  color:#feee00;
+  background-color: #999;
 }
 

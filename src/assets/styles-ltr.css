@@ -1,0 +1,45 @@
+
+.card-footer .box{
+  width:50%;
+  position: relative;
+  height: 40px;
+}
+.card-footer .box:first-child::before{
+  content:"";
+  position: absolute;
+  height: 100%;
+  width:3px;
+  background-color: #0871de;
+  border-radius:4px ;
+  left:-15px
+}
+.card-footer .box:last-child::before{
+  content:"";
+  position: absolute;
+  height: 100%;
+  width:3px;
+  background-color: #fdb841;
+  border-radius:4px ;
+  left:-15px
+}
+.person-info-row{
+  flex-direction: row-reverse;
+}
+.read-box{
+  text-align: right;
+  min-height: 25%;
+}
+.arrows{
+  direction: rtl;
+}
+
+
+.sinlge-comment-card-body i{
+  transform: rotate(-180deg);
+}
+.card-header .cal .date-calnder{
+  position:absolute;
+left: -343%;
+    bottom: -15px;
+    display: none;
+}

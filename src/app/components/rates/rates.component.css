@@ -1,3 +1,7 @@
+.card{
+  border:none;
+}
+
 .card-body .card{
   display: flex;
   width:100%;
@@ -55,27 +59,4 @@ stroke:#0871de;
 }
 .card-footer .box p{
   color:#999
-}
-.card-footer .box{
-  width:50%;
-  position: relative;
-  height: 40px;
-}
-.card-footer .box:first-child::before{
-  content:"";
-  position: absolute;
-  height: 100%;
-  width:3px;
-  background-color: #0871de;
-  border-radius:4px ;
-  right:-15px
-}
-.card-footer .box:last-child::before{
-  content:"";
-  position: absolute;
-  height: 100%;
-  width:3px;
-  background-color: #fdb841;
-  border-radius:4px ;
-  right:-15px
 }

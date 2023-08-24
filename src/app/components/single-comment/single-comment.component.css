@@ -1,6 +1,7 @@
 .card{
 
   height: 150px;
+  width:100%
   /* cursor: pointer; */
 }
 .card:nth-child(2n+1){
@@ -12,6 +13,12 @@ background-color: #fff6e3;
 .card:hover{
   background-color: #7661e2;
   color:#fff
+}
+.card:hover i.fa-arrow-left-long{
+  padding:10px;
+  color:#7661e2;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 p{

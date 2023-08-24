@@ -1,28 +1,28 @@
-<div class="container-fluid">
+<div class="container-fluid" [dir]="'dir' | translate">
   <div class="row">
-    <div class="side-menu col-md-2 col-lg-2">
+    <div class="side-menu active col-md-2 col-lg-2">
       <app-sidemenu></app-sidemenu>
     </div>
-    <div class="content col-sm-12 col-md-6 col-lg-6 mt-5">
+    <div class="content col-sm-12 col-md-6 col-lg-7 mt-5">
       <div class="row">
-        <div class="personal-data col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+        <div class="personal-data col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4">
           <app-person-info></app-person-info>
         </div>
-        <div class="personal-rate col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+        <div class="personal-rate col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4">
           <app-rates></app-rates>
         </div>
-        <div class="personal-reads col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+        <div class="personal-reads col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4">
           <app-reads></app-reads>
         </div>
       </div>
       <div class="row">
         <app-search-bar></app-search-bar>
-        <div class="col-12">
+        <div class="col-12 persons-list">
           <app-persons-list></app-persons-list>
         </div>
       </div>
     </div>
-    <div class="calendar-and-comments col-md-4 col-lg-4 mt-5">
+    <div class="calendar-and-comments col-md-6 col-lg-4 col-xl-3 mt-5">
       <div class="row">
         <app-calendar></app-calendar>
       </div>
