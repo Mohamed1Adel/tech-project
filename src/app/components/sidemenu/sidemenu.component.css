@@ -1,58 +1,48 @@
-.logo {
-  margin-bottom: 300px;
+.logo{
+  margin-bottom:150px ;
+}
+.main-multi-menu h5{
+  color:#999
 }
 
-.example-menu {
-  display: inline-flex;
-  flex-direction: column;
-  min-width: 180px;
-  max-width: 280px;
-  background-color: rgba(255, 255, 255);
-  padding: 6px 0;
-}
-
-.example-menu-item,
-.example-standalone-trigger {
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-
-  user-select: none;
-  min-width: 64px;
-  line-height: 36px;
-  padding: 0 16px;
-
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex: 1;
-}
-
-.example-menu-item:hover {
-  background-color: rgb(208, 208, 208);
-}
-
-.example-menu-item:active {
-  background-color: rgb(170, 170, 170);
-}
-
-.example-standalone-item {
-  background-color: rgb(239, 239, 239);
-}
-.example-standalone-item:hover {
-  background-color: rgb(208, 208, 208);
-}
-.example-standalone-item[aria-expanded='true'] {
-  background-color: rgb(208, 208, 208);
-}
-
-
-.manu{
+.menu-btn-and-logo{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.manu-name-logo{
-  display: flex;
-  align-items: center;
+/* .menu:hover .menu-items{
+  position: relative;
+  left:0;
+  top:100%;
+  display: block;
+} */
+.menu-items{
+  /* position: absolute;
+  left:0;
+  top:100%; */
+  /* display: none; */
+  
 }
+.menu{
+  overflow: hidden;
+    height: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.menu:not(:first-child){
+  margin-top: 20px;
+}
+.menu:hover{
+  overflow: visible;
+  height: auto;
+}
+.fa-chevron-up{
+  display: none;
+}
+.menu:hover .fa-chevron-up{
+  display: block;
+}
+.menu:hover .fa-chevron-down{
+  display: none;
+}
+

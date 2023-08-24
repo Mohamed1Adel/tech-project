@@ -3,3 +3,6 @@
   overflow: hidden;
   overflow-y: scroll;
 }
+.container-fluid::-webkit-scrollbar{
+  display: none;
+}
