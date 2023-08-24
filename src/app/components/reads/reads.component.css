@@ -4,6 +4,9 @@ p{
 h5 i{
   padding:5px
 }
+.card{
+  border:none;
+}
 .reads{
   width:100%;
 height: 100%;

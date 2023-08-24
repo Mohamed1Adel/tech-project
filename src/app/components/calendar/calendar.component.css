@@ -18,8 +18,14 @@ align-items: center;
 
 }
 .card-header .cal{
+  position: relative;
   cursor: pointer;
 }
+
+.card-header .cal:hover .date-calnder{
+  display: block;
+}
+
 
 .card-header .cal i:last-child{
 margin-right:5px;
@@ -67,11 +73,11 @@ color:#999;
   justify-content: space-evenly;
 }
 .day .day-tasks .task{
-  /* background-color: #000; */
+
   width:7px;
   height: 7px;
   border-radius: 50%;
-  /* margin:3px */
+
 }
 .day .day-tasks .task-one{
   background-color: #3dd598;

@@ -6,9 +6,14 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'tech-project';
+  lang: any;
   constructor(private translate: TranslateService) {
-
-    translate.use('en');
+    if ('lang' in localStorage) {
+      this.lang = localStorage.getItem('lang');
+      translate.use(this.lang);
+    }else{
+      translate.use(this.translate.defaultLang);
+    }
   }
+  title = 'tech-project';
 }

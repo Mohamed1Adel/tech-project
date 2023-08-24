@@ -1,6 +1,18 @@
 {
+  "dir": "rtl",
+  "side-menu": {
+    "home": "الرئيسية",
+    "menu-no": "منيو رقم",
+    "menu-item": "منيو ميني",
+    "account": "الحساب",
+    "help": "المساعدة",
+    "settings": "الاعدادات"
+  },
   "person-info": {
-    "first-person": "الشخص الاول"
+    "first-person": "الشخص الاول",
+    "first-read": "قراءة رقم 1",
+    "second-read": "قراءة رقم 2",
+    "third-read": "قراءة رقم 3"
   },
   "persons-table": {
     "column-name": {
@@ -25,7 +37,7 @@
       "Delete": "حذف"
     }
   },
-  "rates":{
+  "rates": {
     "statistics": "احصائيات",
     "first-rate": "الخيار الاول",
     "second-rate": "الخيار الثاني"
@@ -43,7 +55,12 @@
     "Thu": "الخميس",
     "Fri": "الجمعة"
   },
+  "time": {
+    "am": "AM",
+    "pm": "PM"
+  },
   "general": {
-    "AppointmentCalendar": "تقويم المواعيد"
+    "AppointmentCalendar": "تقويم المواعيد",
+    "add-new": "اضافة جديد"
   }
 }

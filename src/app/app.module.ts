@@ -15,7 +15,6 @@ import { ReadsComponent } from './components/reads/reads.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { PersonsListComponent } from './components/persons-list/persons-list.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
-import { ManageTableComponent } from './components/manage-table/manage-table.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SingleCommentComponent } from './components/single-comment/single-comment.component';
@@ -33,6 +32,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +44,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     SearchBarComponent,
     PersonsListComponent,
     CalendarComponent,
-    ManageTableComponent,
     CommentsComponent,
     SingleCommentComponent,
   ],
@@ -69,6 +68,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     CdkStepperModule,
     CdkMenuModule,
     MatButtonModule,
+    RouterModule,
     TranslateModule.forRoot({
       defaultLanguage:'en',
       loader: {

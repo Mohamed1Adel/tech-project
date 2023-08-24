@@ -2,6 +2,7 @@
   max-height: 100vh;
   overflow: hidden;
   overflow-y: scroll;
+  padding:0
 }
 .container-fluid::-webkit-scrollbar{
   display: none;
