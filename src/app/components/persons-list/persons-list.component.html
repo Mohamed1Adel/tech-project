@@ -1,13 +1,23 @@
 <mat-card>
   <mat-card-header></mat-card-header>
   <mat-card-content>
-    <table mat-sort mat-table [dataSource]="dataSource" class="text-center" cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="drop($event)">
+    <table
+      mat-sort
+      mat-table
+      [dataSource]="dataSource"
+      class="text-center"
+      cdkDropList
+      cdkDropListOrientation="horizontal"
+      (cdkDropListDropped)="drop($event)"
+    >
       <!--- Note that these columns can be defined in any order.
         The actual rendered columns are set as a property on the row definition" -->
 
       <!-- Position Column -->
       <ng-container matColumnDef="ID">
-        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>{{'persons-table.column-name.ID' | translate}}</th>
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
+          {{ "persons-table.column-name.ID" | translate }}
+        </th>
         <td mat-cell class="text-center" *matCellDef="let element">
           {{ element.id }}
         </td>
@@ -16,7 +26,8 @@
       <!-- Name Column -->
       <ng-container matColumnDef="Full Name">
         <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
-{{'persons-table.column-name.FullName' | translate}}        </th>
+          {{ "persons-table.column-name.FullName" | translate }}
+        </th>
         <td mat-cell class="text-center" *matCellDef="let element">
           {{ element.name }}
         </td>
@@ -25,7 +36,8 @@
       <!-- Weight Column -->
       <ng-container matColumnDef="Email">
         <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
-{{'persons-table.column-name.Email' | translate}}        </th>
+          {{ "persons-table.column-name.Email" | translate }}
+        </th>
         <td mat-cell class="text-center p-0" *matCellDef="let element">
           {{ element.email }}
         </td>
@@ -34,8 +46,13 @@
       <!-- Symbol Column -->
       <ng-container matColumnDef="Work Days">
         <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
-{{'persons-table.column-name.WorkDays' | translate}}        </th>
-        <td mat-cell class="work-days text-center p-0" *matCellDef="let element">
+          {{ "persons-table.column-name.WorkDays" | translate }}
+        </th>
+        <td
+          mat-cell
+          class="work-days text-center p-0"
+          *matCellDef="let element"
+        >
           <ul class="group">
             <li>
               <input
@@ -46,7 +63,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="sat{{ element.id }}"
-                >{{'persons-table.WorkDayName.Sa' | translate}}     </label
+                >{{ "persons-table.WorkDayName.Sa" | translate }} </label
               ><br />
             </li>
             <li>
@@ -58,7 +75,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="sun{{ element.id }}"
-                >{{'persons-table.WorkDayName.Su' | translate}} </label
+                >{{ "persons-table.WorkDayName.Su" | translate }} </label
               ><br />
             </li>
             <li>
@@ -70,7 +87,7 @@
                 autocomplete="off"
               />
               <label class="btn btn-outline-secondary" for="mon{{ element.id }}"
-                >{{'persons-table.WorkDayName.Mo' | translate}} </label
+                >{{ "persons-table.WorkDayName.Mo" | translate }} </label
               ><br />
             </li>
             <li>
@@ -81,8 +98,10 @@
                 checked
                 autocomplete="off"
               />
-              <label class="btn btn-outline-secondary" for="tue{{ element.id }}"
-                >{{'persons-table.WorkDayName.Tu' | translate}}</label
+              <label
+                class="btn btn-outline-secondary"
+                for="tue{{ element.id }}"
+                >{{ "persons-table.WorkDayName.Tu" | translate }}</label
               ><br />
             </li>
             <li>
@@ -93,8 +112,10 @@
                 checked
                 autocomplete="off"
               />
-              <label class="btn btn-outline-secondary" for="wed{{ element.id }}"
-                >{{'persons-table.WorkDayName.We' | translate}}</label
+              <label
+                class="btn btn-outline-secondary"
+                for="wed{{ element.id }}"
+                >{{ "persons-table.WorkDayName.We" | translate }}</label
               ><br />
             </li>
             <li>
@@ -105,8 +126,10 @@
                 checked
                 autocomplete="off"
               />
-              <label class="btn btn-outline-secondary" for="thu{{ element.id }}"
-                >{{'persons-table.WorkDayName.Th' | translate}}</label
+              <label
+                class="btn btn-outline-secondary"
+                for="thu{{ element.id }}"
+                >{{ "persons-table.WorkDayName.Th" | translate }}</label
               ><br />
             </li>
             <li>
@@ -117,8 +140,10 @@
                 checked
                 autocomplete="off"
               />
-              <label class="btn btn-outline-secondary" for="fri{{ element.id }}"
-                >{{'persons-table.WorkDayName.Fr' | translate}}</label
+              <label
+                class="btn btn-outline-secondary"
+                for="fri{{ element.id }}"
+                >{{ "persons-table.WorkDayName.Fr" | translate }}</label
               ><br />
             </li>
           </ul>
@@ -126,18 +151,25 @@
       </ng-container>
 
       <ng-container matColumnDef="Files">
-        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>{{'persons-table.column-name.Files' | translate}}</th>
+        <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
+          {{ "persons-table.column-name.Files" | translate }}
+        </th>
         <td mat-cell class="text-center p-0" *matCellDef="let element">
           <div class="uploaded-files">
-            <img src="{{element.uploadedFile.fileImgPath}}" style="object-fit:cover;margin:5px;border-radius: 4px;"  width="30px" height="30" alt="">
-            <div class="file-info ">
+            <img
+              src="{{ element.uploadedFile.fileImgPath }}"
+              style="object-fit: cover; margin: 5px; border-radius: 4px"
+              width="30px"
+              height="30"
+              alt=""
+            />
+            <div class="file-info">
               <h6 class="file-name">
-                {{element.uploadedFile.fileName}}
+                {{ element.uploadedFile.fileName }}
               </h6>
               <p class="file-size">
-                {{element.uploadedFile.fileSize}}
+                {{ element.uploadedFile.fileSize }}
               </p>
-
             </div>
           </div>
         </td>
@@ -148,17 +180,16 @@
           class="text-center setting-header-icon"
           *matHeaderCellDef
         >
-        <div class="parent-setting-group">
+          <div class="parent-setting-group">
             <i class="fa-solid fa-gear"></i>
             <ul class="check-group">
               <li>
-
                 <div class="form-check">
                   <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
                     Default checkbox
@@ -166,13 +197,12 @@
                 </div>
               </li>
               <li>
-
                 <div class="form-check">
                   <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
                     Default checkbox
@@ -180,13 +210,12 @@
                 </div>
               </li>
               <li>
-
                 <div class="form-check">
                   <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
                     Default checkbox
@@ -194,13 +223,12 @@
                 </div>
               </li>
               <li>
-
                 <div class="form-check">
                   <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
                     Default checkbox
@@ -208,13 +236,12 @@
                 </div>
               </li>
               <li>
-
                 <div class="form-check">
                   <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
                     Default checkbox
@@ -222,20 +249,18 @@
                 </div>
               </li>
               <li>
-
                 <div class="form-check">
                   <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
                   />
                   <label class="form-check-label" for="flexCheckDefault">
                     Default checkbox
                   </label>
                 </div>
               </li>
-
             </ul>
           </div>
         </th>
@@ -247,8 +272,12 @@
           >
             <i class="fa-solid fa-ellipsis-vertical setting-icon"></i>
             <div class="setting-btns" #settingBtns>
-              <button class="btn btn-sm btn-warning">{{'persons-table.table-Btns.Edit' | translate}}</button>
-              <button class="btn btn-sm btn-danger">{{'persons-table.table-Btns.Delete' | translate}}</button>
+              <button class="btn btn-sm btn-warning">
+                {{ "persons-table.table-Btns.Edit" | translate }}
+              </button>
+              <button class="btn btn-sm btn-danger">
+                {{ "persons-table.table-Btns.Delete" | translate }}
+              </button>
             </div>
           </div>
         </td>
@@ -265,3 +294,4 @@
     ></mat-paginator>
   </mat-card-footer>
 </mat-card>
+<div></div>
