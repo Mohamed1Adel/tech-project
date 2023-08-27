@@ -60,7 +60,7 @@ export class PersonsListComponent {
     console.log(this.settingBtns.nativeElement);
     this.showSettingBtns = !this.showSettingBtns;
     return (this.settingBtns.nativeElement.style.display = this.showSettingBtns
-      ? 'block'
+      ? 'flex'
       : 'none');
   }
 

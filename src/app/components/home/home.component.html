@@ -1,4 +1,4 @@
-<div class="container-fluid" [dir]="'dir' | translate">
+<div class="container-fluid " [dir]="'dir' | translate">
   <div class="row">
     <div class="side-menu active col-md-2 col-lg-2">
       <app-sidemenu></app-sidemenu>
@@ -11,12 +11,15 @@
         <div class="personal-rate col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4">
           <app-rates></app-rates>
         </div>
-        <div class="personal-reads col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+        <div class="personal-reads col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
           <app-reads></app-reads>
         </div>
       </div>
-      <div class="row">
-        <app-search-bar></app-search-bar>
+      <div class="row persons-list-row">
+        <div class="col-sm-8 search-bar">
+
+          <app-search-bar></app-search-bar>
+        </div>
         <div class="col-12 persons-list">
           <app-persons-list></app-persons-list>
         </div>

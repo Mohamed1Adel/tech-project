@@ -1,5 +1,16 @@
 .card{
-  border:none
+  border:none;
+  width:279px;
+  height: 255px;
+  padding:0
+}
+.read-name{
+  font-size: 13px;
+  padding:2px
+}
+h5{
+  font-size: 16px;
+  font-weight: bold;
 }
 .per-img-name{
   position: relative;

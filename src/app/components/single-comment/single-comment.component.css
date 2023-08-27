@@ -1,7 +1,7 @@
 .card{
 
-  height: 150px;
-  width:100%
+  height: 116px;
+  width:331px
   /* cursor: pointer; */
 }
 .card:nth-child(2n+1){
@@ -14,8 +14,11 @@ background-color: #fff6e3;
   background-color: #7661e2;
   color:#fff
 }
+.card i.fa-arrow-left-long{
+    padding:7px;
+}
 .card:hover i.fa-arrow-left-long{
-  padding:10px;
+
   color:#7661e2;
   background-color: #fff;
   border-radius: 5px;
@@ -25,6 +28,9 @@ p{
   font-size: 14px;
   color:#999;
   margin:0
+}
+h6{
+  font-size: 14px;
 }
 .card-body{
   padding:0 10px

@@ -1,3 +1,52 @@
+/* .content .card{
+  padding:0
+} */
 
 
+.upper-data{
+  display: flex;
 
+}
+.side-menu{
+  width:250px;
+  padding:0
+}
+
+
+.content
+{
+  width:770px;
+  padding:0
+
+}
+/* @media (max-width:767px) {
+.side-menu{
+  width:0px;
+}
+
+} */
+  .persons-list-row{
+    margin:0;
+    padding:0
+  }
+  .search-bar{
+    padding:0
+  }
+  .personal-data,.personal-rate{
+    width:279px;
+    height: 254px;
+    padding:0;
+    margin:5px
+  }
+.personal-reads{
+      width:195px;
+    height: 254px;
+    padding:0;
+        margin:5px;
+}
+.persons-list{
+  padding:0
+}
+.calendar-and-comments{
+  width:360px
+}

@@ -1,95 +1,101 @@
-.card-header{
+.card {
+  width: 336px;
+  height: 150px;
+}
+.card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.card-header .date{
+.card-header .date {
   display: flex;
   align-items: center;
 
 }
-.card-header .date .arrows{
-  margin: 8px;
-display: flex;
-align-items: center;
-}
-.card-header .date .arrows .arrow-right{
-  margin-left:10px;
 
+.card-header .date .arrows {
+  margin: 8px;
+  display: flex;
+  align-items: center;
 }
-.card-header .cal{
+.card-header .date .arrows .arrow-right {
+  margin-left: 10px;
+}
+.card-header .cal {
   position: relative;
   cursor: pointer;
 }
 
-.card-header .cal:hover .date-calnder{
+.card-header .cal:hover .date-calnder {
   display: block;
 }
 
-
-.card-header .cal i:last-child{
-margin-right:5px;
-font-size: 12px;
-color:#999;
+.card-header .cal i:last-child {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #999;
 }
 
-.card-body .days{
+.card-body .days {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
-.card-body .days p{
+.card-body .days p {
   font-size: 14px;
-  color:#999
+  color: #999;
 }
-.card-body .days h5{
+.card-body .days h5 {
   font-size: 16px;
 }
-.card-body .days .day{
+.card-header{
+  font-size: 14px;
+  height: 35px;
+}
+.card-body .days .day {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:16%;
-  padding:5px;
+  width: 16%;
+  padding: 5px;
   border-radius: 5px;
   cursor: pointer;
+  /* width: 40px; */
+  height: 85px;
 }
-.card-body .days .day.active{
+.card-body .days .day.active {
   background-color: #feee00;
 }
-.card-body .days .day.active .day-number{
-  color:#fff;
+.card-body .days .day.active .day-number {
+  color: #fff;
   background-color: #000;
-  padding:5px;
+  padding: 5px;
   border-radius: 50%;
-
 }
-.day .day-tasks{
-  width:100%;
+.day .day-tasks {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.day .day-tasks .task{
-
-  width:7px;
+.day .day-tasks .task {
+  width: 7px;
   height: 7px;
   border-radius: 50%;
-
 }
-.day .day-tasks .task-one{
+.day .day-tasks .task-one {
   background-color: #3dd598;
 }
-.day .day-tasks .task-two{
+.day .day-tasks .task-two {
   background-color: #fc9a01;
 }
-.day .day-tasks .task-three{
+.day .day-tasks .task-three {
   background-color: #5960f9;
 }
 
-
-
-
-
+@media (max-width:767px) {
+  .conteiner-fluid .row{
+    text-align: center;
+  }
+}

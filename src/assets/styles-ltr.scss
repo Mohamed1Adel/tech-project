@@ -1,5 +1,5 @@
 .card-footer .box {
-  // width: 50%;
+  width: 50%;
   position: relative;
   height: 40px;
 }
@@ -10,7 +10,7 @@
   width: 3px;
   background-color: #0871de;
   border-radius: 4px;
-  right: -15px;
+  left: -15px;
 }
 .card-footer .box:last-child::before {
   content: "";
@@ -19,14 +19,39 @@
   width: 3px;
   background-color: #fdb841;
   border-radius: 4px;
-  right: -15px;
+  left: -15px;
+}
+.person-info-row {
+  flex-direction: row-reverse;
+}
+.read-box {
+  text-align: right;
+  min-height: 25%;
+}
+.arrows {
+  direction: rtl;
+}
+
+.sinlge-comment-card-body i {
+  transform: rotate(-180deg);
 }
 .card-header .cal .date-calnder {
   position: absolute;
-  left: 0%;
+  left: -343%;
   bottom: -15px;
   display: none;
 }
+.bottom-side-menu {
+  padding-left: 0;
+}
+.card-header .date h6 {
+  margin-top: 4px;
+}
+.person-info-row{
+  flex-direction: row-reverse;
+}
+
+
 .check-group{
-      left: 38px;
+  left:565px
 }

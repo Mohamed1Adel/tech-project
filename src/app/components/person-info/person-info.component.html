@@ -1,8 +1,8 @@
 <div class="card">
   <div class="card-header d-flex justify-content-between">
-    <h5 class="name">
+    <h6 class="name">
       {{ "person-info.first-person" | translate }}
-    </h5>
+    </h6>
     <div class="date">
       10مايو - 10يونيو
       <i class="fa-solid fa-chevron-down" style="color: #c1c5cd"></i>
@@ -10,49 +10,52 @@
   </div>
   <div class="card-body">
     <div class="person-info-row row">
-      <div class="col-6 flex-md-column">
+      <div class="col-5 flex-md-column">
         <div class="read mt-2">
           <div
             style="
               background-color: #3dd598;
-              width: 10px;
-              height: 10px;
+              width: 7px;
+              height: 7px;
               border-radius: 50%;
               display: inline-block;
             "
+          class="read-name"
           ></div>
-          &nbsp;&nbsp;{{ "person-info.first-read" | translate }}
-          <h4 class="fw-bold">254</h4>
+          <span class="read-name">{{ "person-info.first-read" | translate }}</span>
+          <h5 class="fw-bold">254</h5>
         </div>
         <div class="read">
           <div
             style="
               background-color: #7661e2;
-              width: 10px;
-              height: 10px;
+              width: 7px;
+              height: 7px;
               border-radius: 50%;
               display: inline-block;
             "
+            class="read-name"
           ></div>
-          &nbsp;&nbsp;{{ "person-info.second-read" | translate }}
-          <h4 class="fw-bold">120</h4>
+          <span class="read-name">{{ "person-info.second-read" | translate }}</span>
+          <h5 class="fw-bold">120</h5>
         </div>
         <div class="read">
           <div
             style="
               background-color: #f8bf7f;
-              width: 10px;
-              height: 10px;
+              width: 7px;
+              height: 7px;
               border-radius: 50%;
               display: inline-block;
             "
+            class="read-name"
           ></div>
-          &nbsp;&nbsp;{{ "person-info.third-read" | translate }}
-          <h4 class="fw-bold">25</h4>
+          <span class="read-name">{{ "person-info.third-read" | translate }}</span>
+          <h5 class="fw-bold">25</h5>
         </div>
       </div>
       <div
-        class="col-6 d-flex flex-column align-items-center justify-content-center text-center per-img-name"
+        class="col-7 d-flex flex-column align-items-center justify-content-center text-center per-img-name"
       >
         <div class="cir-1">
           <div class="cir-2">

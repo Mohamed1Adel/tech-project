@@ -1,6 +1,7 @@
 .wrapper{
   display: flex;justify-content: space-between;
   align-items: center;
+  width:770px
 }
 @media (max-width:767px) {
   .wrapper{
@@ -57,5 +58,20 @@ color:#feee00
 .add:hover{
   color:#feee00;
   background-color: #999;
+}
+
+@media (max-width:991px) {
+  .wrapper{
+    width:100%;}
+  .search-box{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  button{
+    margin:5px 0;
+  }
 }
 

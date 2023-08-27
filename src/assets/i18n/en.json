@@ -62,6 +62,7 @@
   },
   "general": {
     "AppointmentCalendar": "Appointment calendar",
-    "add-new":"Add New"
+    "add-new": "Add New",
+    "table-control": "Table Control"
   }
 }

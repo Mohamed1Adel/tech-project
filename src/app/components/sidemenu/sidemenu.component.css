@@ -2,6 +2,15 @@
   margin-bottom: 150px;
   margin-left: 20px;
 }
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.side-menu{
+  height: 100vh;
+}
 .main-multi-menu h5 {
   color: #999;
 }
@@ -103,6 +112,13 @@ background-color: yellow;
   align-items: center;
   cursor: pointer;
 }
-.langauge i ,.bottom-menu i{
-  margin-right: 8px;
+.langauge i ,.bottom-side-menu i{
+  /* margin-right: 8px; */
+}
+
+@media (max-width:991px) {
+.side-menu{
+display: none;
+}
+
 }

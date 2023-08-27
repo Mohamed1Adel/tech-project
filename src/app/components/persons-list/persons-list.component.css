@@ -1,4 +1,9 @@
 
+  mat-card{
+  position: relative;
+  width:770px;
+  margin:0
+  }
 @media (max-width:1199px) {
   mat-card{
     max-width: 100%;
@@ -6,11 +11,12 @@
     overflow-x: scroll;
 }
 }
+mat-card-content{
+  padding:0;
+
+}
 mat-card-footer{
   width:100%
-}
-mat-card{
-position: relative;
 }
 .table{
   position: relative;
@@ -24,7 +30,9 @@ position: relative;
   justify-content: center;
 }
 .work-days  ul li{
-  margin:5px;
+  width:19px;
+  height: 19px;
+  margin:4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,8 +41,14 @@ position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width:30px;
-  height: 30px;
+  width:19px;
+  height: 22px;
+  border-radius: 3px;
+  font-size: 12px;
+  border:none
+}
+.work-days label:hover{
+  border:1px solid #999
 }
 
 .work-days .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
@@ -64,11 +78,41 @@ display: none;
   position: relative;
   z-index: 10000 !important;
 }
+
+.parent-setting-group:hover .check-group{
+  display: block;
+}
 .check-group{
   position: absolute;
-  top:0;
-  left:0;
+top: 50px;
+
+    padding:0;
   z-index: 10000;
+    background-color: #fff;
+    width:162px;
+    padding:10px;
+    /* height: 162px; */
+    list-style: none;
+    display: none;
+
+}
+
+.setting-header:hover .check-group{
+  display: block;
+}
+.check-group h6{
+  padding:5px;
+  text-align: start;
+  color:#000
+}
+.form-check{
+ text-align: start;
+}
+.check-group li{
+  width:100%;
+  height: 24px;
+  padding:5px;
+  color:#999
 }
 .uploaded-files{
   width:100%;
@@ -93,6 +137,10 @@ display: none;
   margin:0;
     text-align: right;
 }
+/* .setting-icon:hover .setting-btns{
+  display: flex;
+} */
 .setting-btns button{
   margin:3px
 }
+

@@ -33,7 +33,6 @@
         </td>
       </ng-container>
 
-      <!-- Weight Column -->
       <ng-container matColumnDef="Email">
         <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
           {{ "persons-table.column-name.Email" | translate }}
@@ -43,7 +42,6 @@
         </td>
       </ng-container>
 
-      <!-- Symbol Column -->
       <ng-container matColumnDef="Work Days">
         <th mat-header-cell cdkDrag class="text-center" *matHeaderCellDef>
           {{ "persons-table.column-name.WorkDays" | translate }}
@@ -61,6 +59,7 @@
                 id="sat{{ element.id }}"
                 checked
                 autocomplete="off"
+                [checked]="element.days.sat"
               />
               <label class="btn btn-outline-secondary" for="sat{{ element.id }}"
                 >{{ "persons-table.WorkDayName.Sa" | translate }} </label
@@ -73,6 +72,7 @@
                 id="sun{{ element.id }}"
                 checked
                 autocomplete="off"
+                [checked]="element.days.sun"
               />
               <label class="btn btn-outline-secondary" for="sun{{ element.id }}"
                 >{{ "persons-table.WorkDayName.Su" | translate }} </label
@@ -85,6 +85,7 @@
                 id="mon{{ element.id }}"
                 checked
                 autocomplete="off"
+                [checked]="element.days.mun"
               />
               <label class="btn btn-outline-secondary" for="mon{{ element.id }}"
                 >{{ "persons-table.WorkDayName.Mo" | translate }} </label
@@ -97,6 +98,7 @@
                 id="tue{{ element.id }}"
                 checked
                 autocomplete="off"
+                [checked]="element.days.tue"
               />
               <label
                 class="btn btn-outline-secondary"
@@ -111,6 +113,7 @@
                 id="wed{{ element.id }}"
                 checked
                 autocomplete="off"
+                [checked]="element.days.wed"
               />
               <label
                 class="btn btn-outline-secondary"
@@ -125,6 +128,7 @@
                 id="thu{{ element.id }}"
                 checked
                 autocomplete="off"
+                [checked]="element.days.thr"
               />
               <label
                 class="btn btn-outline-secondary"
@@ -139,6 +143,7 @@
                 id="fri{{ element.id }}"
                 checked
                 autocomplete="off"
+                [checked]="element.days.fri"
               />
               <label
                 class="btn btn-outline-secondary"
@@ -158,7 +163,7 @@
           <div class="uploaded-files">
             <img
               src="{{ element.uploadedFile.fileImgPath }}"
-              style="object-fit: cover; margin: 5px; border-radius: 4px"
+              style="object-fit: none; margin: 5px; border-radius: 4px"
               width="30px"
               height="30"
               alt=""
@@ -179,90 +184,92 @@
           mat-header-cell
           class="text-center setting-header-icon"
           *matHeaderCellDef
+          class="setting-header"
         >
           <div class="parent-setting-group">
             <i class="fa-solid fa-gear"></i>
-            <ul class="check-group">
-              <li>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
-                  </label>
-                </div>
-              </li>
-            </ul>
           </div>
+          <ul class="check-group">
+            <h6>{{'general.table-control' | translate}}</h6>
+            <li>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  {{ "persons-table.column-name.ID" | translate }}
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  {{ "persons-table.column-name.FullName" | translate }}
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  {{ "persons-table.column-name.Email" | translate }}
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  {{ "persons-table.column-name.WorkDays" | translate }}
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  {{ "persons-table.column-name.Files" | translate }}
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  {{ "persons-table.column-name.Setting" | translate }}
+                </label>
+              </div>
+            </li>
+          </ul>
         </th>
         <td mat-cell class="text-center" *matCellDef="let element">
           <div
@@ -290,7 +297,7 @@
   <mat-card-footer>
     <mat-paginator
       [pageSizeOptions]="[6, 15, 25, 100]"
-      showFirstLastButtons
+      getNumberOfPages
     ></mat-paginator>
   </mat-card-footer>
 </mat-card>
