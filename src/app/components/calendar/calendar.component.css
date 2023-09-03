@@ -94,6 +94,11 @@
   background-color: #5960f9;
 }
 
+.cal{
+  display:flex;
+  align-items: center;
+}
+
 @media (max-width:767px) {
   .conteiner-fluid .row{
     text-align: center;
