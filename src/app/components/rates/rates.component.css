@@ -32,8 +32,8 @@ svg circle{
 }
 
 svg circle:nth-child(2){
-  stroke-dasharray:200;
-  stroke-dashoffset:200;
+  stroke-dasharray:300;
+  stroke-dashoffset:100;
 
 
 }

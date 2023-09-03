@@ -30,3 +30,61 @@
 .check-group{
       left: 38px;
 }
+
+// @media (min-width: 768px) and (max-width: 992px) {
+//   .side-menu{
+//     position: fixed;
+//     top:0;
+//     right:0;
+//     text-align: start;
+//     margin:0;
+//     z-index: 9999;
+//     background-color: #fff;
+//   }
+//   .small-logo{
+//     display: block;
+//   }
+//   .big-logo{
+//     display: none;
+//   }
+// }
+// @media (max-width:992px) {
+// .content{
+// margin-right: 80px;
+// }
+// }
+
+
+// @media only screen and (max-width: 767px) {
+//   .side-menu {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     height: 100vh;
+//     transform: translateX(-100%);
+//     transition: all 0.3s ease;
+//     background-color: #fff;
+//     z-index: 1000;
+//     overflow: visible;
+//   }
+//   .side-menu.active {
+//     transform: translateX(0);
+//     background-color: #fff;
+//     z-index: 1000;
+//   }
+// }
+
+// .side-manu-mid-btn{
+//   position: absolute;
+//   top:80px;
+//   left:0;
+//   width:25px;
+//   height: 25px;
+//   border:none;
+//   border-radius: 50%;
+//   background-color: yellow;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+// }

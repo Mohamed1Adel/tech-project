@@ -62,6 +62,7 @@
   "general": {
     "AppointmentCalendar": "تقويم المواعيد",
     "add-new": "اضافة جديد",
-    "table-control":"التحكم في الجدول"
+    "table-control": "التحكم في الجدول",
+    "side-menu-arrow": "<"
   }
 }
