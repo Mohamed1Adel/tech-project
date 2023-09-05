@@ -30,6 +30,9 @@ svg circle{
   stroke-linecap: round;
   transform: translate(5px,5px);
 }
+svg{
+  z-index: 0;
+}
 
 svg circle:nth-child(2){
   stroke-dasharray:300;
