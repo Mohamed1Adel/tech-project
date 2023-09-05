@@ -16,6 +16,7 @@ background-color: #fff6e3;
 }
 .card i.fa-arrow-left-long{
     padding:7px;
+    cursor: pointer;
 }
 .card:hover i.fa-arrow-left-long{
 
