@@ -2,14 +2,30 @@
   margin-bottom: 150px;
   margin-left: 20px;
 }
-ul{
+
+/* @media (max-width:767px) {
+  .logo {
+    margin-bottom: 100px;
+    margin-left: 20px;
+  }
+} */
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
-.side-menu{
-  height: 100vh;
+.small-logo {
+  display: none;
+}
+
+.menu {
+  transition: all 0.3s ease;
+}
+
+
+.main-multi-menu {
+  position: relative;
 }
 .main-multi-menu h5 {
   color: #999;
@@ -27,15 +43,17 @@ a{
   top: 100%;
   display: block;
 }
-
+.menu-title {
+  padding: 8px;
+}
 .menu-items {
   position: absolute;
   left: 0;
   top: 100%;
   display: none;
 }
-.menu-item:hover{
-background-color: yellow;
+.menu-item:hover {
+  background-color: yellow;
 }
 .menu {
   overflow: hidden;
@@ -64,9 +82,7 @@ background-color: yellow;
 }
 
 .menu-btn-and-logo {
-
   margin-bottom: 15px;
-
 }
 
 .account {
@@ -81,13 +97,13 @@ background-color: yellow;
 .bottom-menu li {
   margin-top: 20px;
 }
-.menu-btn-and-logo:hover ,.bottom-menu:hover li,.langauge:hover{
+.menu-btn-and-logo:hover,
+.bottom-menu:hover li,
+.langauge:hover {
   cursor: pointer;
-  padding:3px;
   border-radius: 4px;
   background-color: yellow;
 }
-
 
 .toggle-menu {
   width: 25px;
@@ -111,14 +127,4 @@ background-color: yellow;
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-.langauge i ,.bottom-side-menu i{
-  /* margin-right: 8px; */
-}
-
-@media (max-width:991px) {
-.side-menu{
-display: none;
-}
-
 }

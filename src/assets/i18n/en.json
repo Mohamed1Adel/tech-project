@@ -63,6 +63,7 @@
   "general": {
     "AppointmentCalendar": "Appointment calendar",
     "add-new": "Add New",
-    "table-control": "Table Control"
+    "table-control": "Table Control",
+    "side-menu-arrow":">"
   }
 }

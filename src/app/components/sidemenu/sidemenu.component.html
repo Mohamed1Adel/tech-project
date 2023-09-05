@@ -1,15 +1,16 @@
-<div class="side-menu active container-fluid">
+<div #sideMenu class="side-menu  container-fluid">
   <div class="logo mt-1 text-center">
-    <a href="#"><img src="../../../assets/Group 80.png" alt="" /></a>
+    <a href="#" class="big-logo"><img src="../../../assets/big-logo.png" alt="" /></a>
+    <a href="#" class="small-logo"><img src="../../../assets/small-logo.png" alt="" /></a>
   </div>
   <div class="main-multi-menu">
-    <h5 class="home">{{ "side-menu.home" | translate }}</h5>
+    <h5 #home class="home">{{ "side-menu.home" | translate }}</h5>
 
-    <div class="menu">
-      <div class="menu-btn-and-logo">
+    <div #menu class="menu">
+      <div #menuHeader class="menu-btn-and-logo">
         <div class="menu-name-logo">
           <i class="fa-solid fa-house"></i>
-          {{ "side-menu.menu-no" | translate }} 1
+         <span class="menu-title">{{ "side-menu.menu-no" | translate }} 1</span>
         </div>
 
         <div class="menu-arrow">
@@ -18,18 +19,18 @@
         </div>
       </div>
 
-      <ul class="menu-items">
+      <ul #menuItems class="menu-items">
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
       </ul>
     </div>
-    <div class="menu">
-      <div class="menu-btn-and-logo">
+    <div #menu  class="menu">
+      <div #menuHeader class="menu-btn-and-logo">
         <div class="menu-name-logo">
           <i class="fa-solid fa-house"></i>
-          {{ "side-menu.menu-no" | translate }} 2
+          <span class="menu-title">{{ "side-menu.menu-no" | translate }} 2</span>
         </div>
 
         <div class="menu-arrow">
@@ -38,18 +39,18 @@
         </div>
       </div>
 
-      <ul class="menu-items">
+      <ul #menuItems class="menu-items">
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
       </ul>
     </div>
-    <div class="menu">
-      <div class="menu-btn-and-logo">
+    <div #menu  class="menu">
+      <div #menuHeader class="menu-btn-and-logo">
         <div class="menu-name-logo">
           <i class="fa-solid fa-house"></i>
-          {{ "side-menu.menu-no" | translate }} 3
+          <span class="menu-title">{{ "side-menu.menu-no" | translate }} 3</span>
         </div>
 
         <div class="menu-arrow">
@@ -58,27 +59,27 @@
         </div>
       </div>
 
-      <ul class="menu-items">
+      <ul #menuItems class="menu-items">
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
       </ul>
     </div>
-    <div class="menu">
-      <div class="menu-btn-and-logo">
+    <div #menu class="menu">
+      <div #menuHeader  class="menu-btn-and-logo">
         <div class="menu-name-logo">
           <i class="fa-solid fa-house"></i>
-          {{ "side-menu.menu-no" | translate }} 4
+          <span class="menu-title">{{ "side-menu.menu-no" | translate }} 4</span>
         </div>
 
-        <div class="menu-arrow">
+        <div class="menu-arrow" >
           <i class="fa-solid fa-chevron-down"></i>
           <i class="fa-solid fa-chevron-up"></i>
         </div>
       </div>
 
-      <ul class="menu-items">
+      <ul #menuItems class="menu-items">
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
         <li class="menu-item">{{ "side-menu.menu-item" | translate }}</li>
@@ -86,23 +87,25 @@
       </ul>
     </div>
 
-    <h5 class="mt-5">الحساب</h5>
+    <h5 #account class="mt-5 account">الحساب</h5>
       <ul class="bottom-side-menu">
         <li class="bottom-menu-item mt-5 mb-3">
           <i class="fa-solid fa-circle-info p-2"></i>
-          <span>{{ "side-menu.help" | translate }}</span>
+          <span #help class="menu-title">{{ "side-menu.help" | translate }}</span>
         </li>
 
         <li class="bottom-menu-item mt-3 mb-3">
           <i class="fa-solid fa-gear p-2"></i>
-          <span>{{ "side-menu.settings" | translate }}</span>
+          <span #setting class="menu-title">{{ "side-menu.settings" | translate }}</span>
         </li>
 
         <li class="bottom-menu-item mt-3 mb-3">
           <a class="langauge p-0 m-0" (click)="changeLanguage()">
-            <i class="fa-solid fa-earth-americas p-2 m-0"></i><span>{{ lang == "en" ? "عربي" : "English" }}</span>
+            <i class="fa-solid fa-earth-americas p-2 m-0"></i><span #language class="menu-title">{{ lang == "en" ? "عربي" : "English" }}</span>
           </a>
         </li>
       </ul>
     </div>
+    <button (click)="toggleSideMenu()" class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <button (click)="toggleMidSideMenu()" class="side-manu-mid-btn">{{ 'general.side-menu-arrow' | translate}}</button>
 </div>
